@@ -6,7 +6,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "SET HOST=192.168.1.142 && vite",
+    "dev": "cross-env HOST=192.168.1.142 vite",
     "start": "vite preview",
     "build": "vite build",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
@@ -91,6 +91,7 @@
   "devDependencies": {
     "@types/react": "^18.2.43",
     "@vitejs/plugin-react-swc": "^3.5.0",
+    "cross-env": "^7.0.3",
     "eslint": "^8.55.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^9.1.0",
